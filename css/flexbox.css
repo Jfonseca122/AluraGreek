@@ -1,0 +1,32 @@
+.nav__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    
+
+}
+.article_producto{
+    flex: 1;
+}
+
+
+.productos_container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se acomoden en múltiples líneas si es necesario */
+    gap: 20px; /* Espacio entre los productos */
+}
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.article_formulario{
+    flex: 1;
+   
+}
+

@@ -1,0 +1,192 @@
+.article_formulario{
+    padding: 1.5rem;
+}
+
+
+.contenedor_formulario{
+
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+  
+
+.form label {
+    position: relative;
+}
+  
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+  
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+  
+.form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+  
+.form label .input:valid + span {
+    color: green;
+}
+.contenedor_btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+  
+.submit{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+}
+.limpiar{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color:  #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: royalblue;
+    font-size: 16px;
+    transform: .3s ease;
+}
+  
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+    cursor: pointer;
+}
+.limpiar:hover {
+    background-color: rgb(56, 90, 194);
+    cursor: pointer;
+    color: #fff;
+}
+  
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+}
+.contenedor_mensajeGlobal{
+  padding: 0.5rem;
+
+}
+.mensaje{
+    font-size:small;
+    text-align: center;
+    font-weight: bol
+   
+}
+.mensajeExito{
+    color: green;
+}
+.mensajeError{
+    color: red;
+  
+}
+
+/* Media Queries */
+
+/* Para pantallas de hasta 900px */
+@media (max-width: 900px) {
+    /* Ajustar el formulario a un tamaño más amplio en pantallas medianas */
+    .form {
+        width: 80%; /* Ocupa el 80% del ancho */
+        padding: 15px;
+    }
+
+    .form label .input {
+        padding: 12px; /* Campos más grandes */
+    }
+
+    /* Los botones ocupan el 100% del ancho */
+    .contenedor_btns {
+        flex-direction: column; /* Los botones se apilan */
+        align-items: center;
+    }
+
+    .submit, .limpiar {
+        width: 100%; /* Botones a 100% de ancho */
+        margin-bottom: 10px; /* Espacio entre botones */
+    }
+
+    /* Ajustes de los mensajes */
+    .contenedor_mensajeGlobal {
+        padding: 1rem; /* Un poco más de espacio */
+    }
+
+    .mensaje {
+        font-size: 1rem; /* Ajuste del tamaño de la fuente */
+    }
+}
+
+/* Para pantallas de hasta 600px */
+@media (max-width: 600px) {
+    /* Ajustar aún más el formulario */
+    .form {
+        width: 90%; /* Formulario ocupa el 90% del ancho */
+        padding: 10px;
+    }
+
+    .form label .input {
+        padding: 14px; /* Aumentar el padding de los inputs */
+    }
+
+    .contenedor_btns {
+        flex-direction: column; /* Apilar los botones */
+        align-items: center;
+    }
+
+    .submit, .limpiar {
+        width: 100%; /* Los botones ocupan el 100% de la pantalla */
+        margin-bottom: 10px;
+    }
+
+    /* Ajustes de los mensajes */
+    .contenedor_mensajeGlobal {
+        padding: 1.5rem; /* Más espacio para los mensajes */
+    }
+
+    .mensaje {
+        font-size: 1.1rem; /* Aumentar tamaño de los mensajes */
+    }
+}

@@ -1,0 +1,312 @@
+:root {
+    --azul-pastel: #A3C6FF;
+    --verde-pastel: #B4E1B3;
+    --rosa-pastel: #F9C8D2;
+    --amarillo-pastel: #F3E1A0;
+    --gris-pastel: #F1F1F1;
+    --blanco: #FFFFFF;
+    --negro: black;
+}
+
+body {
+    background-color: var(--gris-pastel);
+    color: var(--negro);
+    font-family: Arial, sans-serif;
+}
+
+
+/* ----------------Cabezera------------------------- */
+.header{
+    padding: 1rem;
+}
+.card {
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px #989898,
+                inset -5px -5px 10px #ffffff;   
+}
+.card_dos{
+    background-color: var(--blanco);
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow:  5px 5px 10px #989898,
+             -5px -5px 10px #ffffff;
+}
+.contenedor_titulo{
+    background-color: var(--blanco);
+    padding: 0.5rem;
+   
+}
+.titulo_principal{
+    color: var(--negro);
+    font-size:2.5rem;
+    font-weight:bold;
+    letter-spacing: 0.5rem;
+    
+
+}
+
+.inputbuscar{
+    border: 2px solid transparent;
+    width: 60%;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+  
+.inputbuscar:hover,
+.inputbuscar:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+  
+
+.btn_buscar {
+    padding: 0.8rem;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out; /* Suaviza las transiciones */
+}
+
+.btn_buscar:active {
+    transform: translateY(4px); /* Efecto de "hundimiento" al hacer clic */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Menos sombra cuando se presiona */
+}
+
+.btn_buscar:focus {
+    outline: none; /* Elimina el contorno del botón cuando está enfocado */
+}
+
+
+/* ----------------Cuerpo------------------------- */
+
+.main{
+    padding:0rem 1rem ;
+}
+
+.article_producto {
+    padding: 20px;
+}
+
+.mi_productos{
+    font-size: 1.5rem;
+    padding:  1rem 0rem;
+    font-weight:600;
+}
+.productos_container{
+    max-height: 350px; /* Establece la altura máxima */
+    overflow-y: auto; /* Aplica la barra de desplazamiento vertical */
+    list-style-type: none; /* Opcional: elimina los puntos de la lista */
+    padding: 0; /* Opcional: elimina el padding */
+}
+
+
+.producto {
+    flex: 0 0 20%;
+    padding: 15px;
+    width: 9rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto img {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--gris-pastel);
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px #cacaca,
+                 -5px -5px 10px #f6f6f6;
+    
+
+}
+
+
+.producto h3 {
+    margin-top: 0.6rem;
+    font-size:small;
+    font-weight:bold ;
+}
+
+.producto p {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: #666;
+    
+}
+
+
+
+
+
+
+.btn-eliminar {
+    background: white;
+    border: none;
+    color: #ff4d4d; /* Color rojo para eliminar */
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+/* Estilo para el botón "Ver más" */
+.btn-ver-mas {
+    text-decoration: none;
+    color: #4CAF50; /* Color verde para ver más */
+    font-size: 16px;
+    padding: 0.3rem;
+}
+
+/* Ajuste de tamaño para los íconos */
+.btn-eliminar i, .btn-ver-mas i {
+    font-size: 1rem;
+}
+
+/* Hover efectos */
+.btn-eliminar:hover {
+    color: #ff0000;
+}
+
+.btn-ver-mas:hover {
+    color: #009688;
+}
+.contenedor_total{
+    text-align: end;
+}
+.totalProducto{
+    font-size: small;
+   
+}
+
+
+
+
+/* Estilo básico para el modal */
+.modal{
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo translúcido más oscuro */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque del fondo */
+    animation: fadeIn 0.3s ease-in-out; /* Animación de aparición */
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenido del modal */
+.modal-content {
+    display:flex ;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 1.8rem;
+    border-radius: 15px; /* Bordes redondeados */
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    animation: slideUp 0.3s ease-in-out; /* Animación de deslizamiento */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para la imagen en el modal */
+.modal-image{
+    width: 100%;
+    height: 25rem;
+    max-width: 450px;
+    border-radius: 8px; /* Bordes redondeados en la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave en la imagen */
+    margin-bottom: 20px;
+ 
+   
+}
+
+/* Estilo para el título en el modal */
+#modal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--negro);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    
+    
+}
+
+/* Estilo para la descripción en el modal */
+#modal-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Estilo para el precio en el modal */
+#modal-price {
+    font-size: 1.1rem;
+    color: #E91E63; /* Color llamativo para el precio */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    color: #E91E63; /* Color elegante para el botón */
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Cambiar color cuando el cursor pasa por encima del botón de cerrar */
+.close:hover,
+.close:focus {
+    color: #C2185B; /* Color más oscuro cuando se pasa el cursor */
+    text-decoration: none;
+}
+
+
+/* ----------final-------------- */
+
+footer{
+    text-align: center;
+    padding: 1rem;
+}

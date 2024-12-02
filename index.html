@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/panda.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/panda.png">
+
+    <!-- Aquí puedes agregar estilos CSS, enlaces a fuentes externas, etc. -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/mediaQ.css">
+    <!-- librerias -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <nav class="nav__header card">
+            <div class="div_nav_header card_dos">
+                <img src="./img/panda.png" alt="Logo del proyecto" class="logo_proyecto">
+            </div>
+            <div class="contenedor_titulo">
+                <h1 class="titulo_principal" >AluraGeek</h1>
+            </div>
+           
+            <div class="contenedor_buscar">
+                <input type="text" class="inputbuscar" data-inputbuscar>
+                <button class="btn_buscar" data-botonBuscar>Buscar</button>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor_mensajeGlobal">
+        <p class="mensaje" id="errorglobal"></p>
+    </div>
+ 
+    <!-- Cuerpo de la página -->
+    <main class="main">
+
+        <section class="section card" >
+
+            <article class="article_producto">
+                <h2 class="mi_productos">Mis productos</h2>
+                
+                <ul class="productos_container" data-contenidoProductos>
+
+                
+                </ul>
+                
+                <div class="contenedor_total">
+                    <span id="totalProducto"></span>
+                </div>
+             
+            </article>
+          
+
+            <article class="article_formulario">
+                <h2 class="mi_productos">Agregar Producto</h2>
+               
+                <div class="contenedor_formulario">
+                  
+                   
+                    <form class="form" data-formulario>
+                                
+                        <label>
+                            <input required="" placeholder="" type="text" class="input" data-titulo>
+                            <span>Nombre</span>
+                        </label> 
+                            
+                        <label>
+                            <input required="" placeholder="" type="number" class="input" data-precio>
+                            <span>Precio</span>
+                        </label>
+                        <label>
+                            <input required="" placeholder="" type="text" class="input" data-descripcion>
+                            <span>Descripción</span>
+                        </label>
+                        <label>
+                            <input required="" placeholder="https://example.com/image.jpg" type="text" class="input"  pattern="https?://.*\.(jpg|jpeg|png|gif|webp)"  data-imagen>
+                            <span></span>
+                        </label>
+                        <p class="mensaje" id="mensajeMostrar"></p>
+                        <div class="contenedor_btns">
+                            <button type="submit" class="submit">Submit</button>
+                            <button type="button" class="limpiar" id="limpiar">Limpiar</button>
+                        </div>
+                       
+                       
+                    </form>
+                    
+                
+                </div>
+            </article>
+
+            <!-- Modal de detalles del producto -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <img id="modal-image" src="" alt="Imagen del Producto" class="modal-image">
+                    <h3 id="modal-title">Nombre del Producto</h3>
+                    <p id="modal-description">Descripción del Producto</p>
+                    <p id="modal-price">Precio: $0.00</p>
+                </div>
+            </div>
+
+        </section>
+       
+
+      
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Hecho por Julian Fonseca. Todos los derechos reservados.</p>
+    </footer>
+    <script type="module" src="./js/mostrarCelulares.js"></script>
+    <script type="module" src="./js/agregarCelulares.js"></script>
+    <script type="module" src="./js/buscarCelular.js"></script>
+    <script type="module" src="./js/eliminarCelular.js"></script>
+    <script type="module" src="./js/logica.js"></script>
+</body>
+</html>

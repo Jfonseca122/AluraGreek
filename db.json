@@ -1,0 +1,88 @@
+{
+  "celulares": [
+    {
+      "id": "1",
+      "title": "iPhone 13 Pro Max",
+      "price": 1200,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_612194-MLA47777512918_102021-F.jpg",
+      "description": "El smartphone más avanzado de Apple con cámara de nivel profesional y pantalla Super Retina XDR."
+    },
+    {
+      "id": "2",
+      "title": "Samsung Galaxy S21 Ultra",
+      "price": 1100,
+      "image": "https://www.techniknews.net/wp-content/uploads/2021/01/samsung-galaxy-s21-ultra-titelbild-2048x1366.jpg",
+      "description": "La potencia de Samsung con cámara de 108 MP y soporte para S-Pen."
+    },
+    {
+      "id": "3",
+      "title": "Google Pixel 6 Pro",
+      "price": 900,
+      "image": "https://www.androidheadlines.com/wp-content/uploads/2021/05/New-Pixel-6-Pro-Leaked-Renders-1.jpg",
+      "description": "La mejor experiencia Android con cámara avanzada y procesador Tensor."
+    },
+    {
+      "id": "4",
+      "title": "OnePlus 9 Pro",
+      "price": 950,
+      "image": "https://th.bing.com/th/id/OIP.wHhDkoFD-XcoKpymr7UjAwHaFj?rs=1&pid=ImgDetMain",
+      "description": "Rendimiento rápido y pantalla AMOLED fluida diseñada para gamers y fotógrafos."
+    },
+    {
+      "id": "5",
+      "title": "Xiaomi Mi 11 Ultra",
+      "price": 850,
+      "image": "https://th.bing.com/th/id/OIP.k2nWx35DwhEfHy7DwHwDOAHaHa?rs=1&pid=ImgDetMain",
+      "description": "El flagship de Xiaomi con pantalla secundaria en la parte trasera y carga ultrarrápida."
+    },
+    {
+      "id": "6",
+      "title": "Sony Xperia 1 III",
+      "price": 1200,
+      "image": "https://fdn.gsmarena.com/imgroot/reviews/21/sony-xperia-1-iii/lifestyle/-1200w5/gsmarena_028.jpg",
+      "description": "Ideal para creadores multimedia con pantalla 4K y enfoque automático profesional."
+    },
+    {
+      "id": "7",
+      "title": "Huawei P50 Pro",
+      "price": 1000,
+      "image": "https://memeburn.com/gearburn/wp-content/uploads/sites/3/2022/04/P50Pro_P50Pocket.jpg",
+      "description": "Diseño elegante y cámaras Leica de última generación para fotos perfectas."
+    },
+    {
+      "id": "8",
+      "title": "Realme GT 2 Pro",
+      "price": 700,
+      "image": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/03/3-Realme-GT-2-Pro-in-hand-rear-1920x1048.jpg",
+      "description": "Un teléfono potente con gran rendimiento y excelente relación calidad-precio."
+    },
+    {
+      "id": "9",
+      "title": "Asus ROG Phone 5",
+      "price": 1200,
+      "image": "https://th.bing.com/th/id/R.37723c48685a5ed1d8bbf3689ec32945?rik=84BhPvUwb9Aylw&pid=ImgRaw&r=0",
+      "description": "Diseñado para gamers con hardware dedicado, pantalla AMOLED y refrigeración avanzada."
+    },
+    {
+      "id": "10",
+      "title": "Motorola Edge Plus",
+      "price": 800,
+      "image": "https://th.bing.com/th/id/OIP.ktUd7Liq-tCrM5EUGJuDtQHaFj?rs=1&pid=ImgDetMain",
+      "description": "Un diseño curvo con una gran batería y cámara de 108 MP para todos tus momentos."
+    },
+    {
+      "title": "Redmi 9c",
+      "price": "400000",
+      "image": "https://laoferta.com.uy/html-uy/smartphones/xiaomi/redmi-9c-32gb/img/img-principal.jpg",
+      "description": "Es un telefono muy bueno, gran camara, muy buen rendimiento",
+      "id": "cjDsPYA"
+    },
+    {
+      "title": "Asus ROG 10",
+      "price": "200000",
+      "image": "https://phonetechx.com/wp-content/uploads/2023/09/Asus-ROG-Phone-10.jpg",
+      "description": "Muy bueno",
+      "id": "zEU7Tr6"
+    }
+  ]
+}
